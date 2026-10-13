@@ -28,7 +28,7 @@ def parse_todo(raw: dict) -> dict:
     """flatten one api todo into the columns"""
     return{
         "id": raw["id"],
-        "user_id": raw["user_id"],
+        "user_id": raw["userId"],
         "title": raw["title"],
         "completed": int(raw["completed"]),
 
