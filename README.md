@@ -13,7 +13,9 @@ A Python command-line tool that fetches users and todos from the JSONPlaceholder
    python -m venv .venv
    ```
 
-   Activate it with `source .venv/Scripts/activate` in Git Bash, or `.venv\Scripts\Activate.ps1` in PowerShell.
+   On Windows, if that prints `Python was not found`, use `py -m venv .venv` instead.
+
+   Activate it with `source .venv/Scripts/activate` in Git Bash, or `.venv\Scripts\Activate.ps1` in PowerShell. If PowerShell blocks the script, use Git Bash.
 
 3. Install the requirements:
 
