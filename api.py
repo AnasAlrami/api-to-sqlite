@@ -16,7 +16,7 @@ def get_json(url: str) -> list[dict]:
         
 def parse_user(raw: dict) -> dict:
     """flatten one API user into columns the user table needs.""" 
-    return{
+    return {
         "id": raw["id"],
         "name": raw["name"],
         "username": raw["username"],
@@ -24,9 +24,10 @@ def parse_user(raw: dict) -> dict:
         "city": raw["address"]["city"],
         
     }
+
 def parse_todo(raw: dict) -> dict:
     """flatten one api todo into the columns"""
-    return{
+    return {
         "id": raw["id"],
         "user_id": raw["userId"],
         "title": raw["title"],
@@ -36,7 +37,7 @@ def parse_todo(raw: dict) -> dict:
 
 def fetch_users() -> list[dict]:
     """download all users and return them parsed"""
-    return[parse_user(raw) for raw in get_json(USERS_URL)]
+    return [parse_user(raw) for raw in get_json(USERS_URL)]
 
 def fetch_todos() -> list[dict]:
     """download all todos and return them parced."""
