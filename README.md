@@ -1,5 +1,7 @@
 this is my first task as a trainee in progineer technologies
 
+Published API documentation: https://8pb0dyeoxi.apidog.io/
+
 # api-to-sqlite
 
 A Python command-line tool that fetches users and todos from the JSONPlaceholder API, stores them in a MySQL database, and prints three SQL reports. It also has an optional web API with Swagger documentation.
